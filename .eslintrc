@@ -19,7 +19,7 @@
     rules: {
         indent: [2, 4, { "SwitchCase": 1 }],
         quotes: [2, "single", { "allowTemplateLiterals": true }],
-        linebreak-style: [2, "unix"],
+        linebreak-style: ["error", "windows"],
         semi: [2, "always"],
         eqeqeq: [2, "always"],
         strict: [2, "global"],
@@ -30,6 +30,5 @@
         no-unused-vars: 0,
         no-constant-condition: 0,
         no-undef: 0,
-        'linebreak-style': [0, 'error', 'windows'],
     }
 }
