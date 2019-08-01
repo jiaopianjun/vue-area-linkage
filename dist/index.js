@@ -3724,13 +3724,13 @@ if (false) {(function () {
     },
 
     data: function data() {
-        if (!this.data || !this.data['86']) {
+        if (!this.data || !this.data['086']) {
             throw new Error('[vue-area-linkage]: 需要提供地区数据，格式参考见：https://github.com/dwqs/area-data');
         }
 
         return {
             // 区域数据
-            provinces: this.data['86'],
+            provinces: this.data['086'],
             citys: {},
             areas: {},
 
@@ -4557,7 +4557,7 @@ if (false) {(function () {
             this.values = [].concat(this.defaultsAreaCodes);
         },
         getActiveLabels: function getActiveLabels(codes) {
-            var provinces = this.data['86'];
+            var provinces = this.data['086'];
             var citys = this.data[codes[0]];
             var l = codes.length;
 
@@ -4886,11 +4886,11 @@ if (false) {(function () {
     },
 
     data: function data() {
-        if (!this.data || !this.data['86']) {
+        if (!this.data || !this.data['086']) {
             throw new Error('[vue-area-linkage]: 需要提供地区数据：https://github.com/dwqs/area-data');
         }
         return {
-            provinces: this.data['86'],
+            provinces: this.data['086'],
             citys: {},
             areas: {},
             // only array
@@ -5091,7 +5091,7 @@ if (false) {(function () {
         },
         iterateCities: function iterateCities() {
             var temp = [];
-            var provinces = this.iterate(this.data['86'], 0);
+            var provinces = this.iterate(this.data['086'], 0);
 
             for (var i = 0, l = provinces.length; i < l; i++) {
                 var item = {};

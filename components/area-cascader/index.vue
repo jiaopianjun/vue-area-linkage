@@ -64,11 +64,11 @@
         },
 
         data () {
-            if (!this.data || !this.data['86']) {
+            if (!this.data || !this.data['086']) {
                 throw new Error('[vue-area-linkage]: 需要提供地区数据：https://github.com/dwqs/area-data');
             }
             return {
-                provinces: this.data['86'],
+                provinces: this.data['086'],
                 citys: {},
                 areas: {},
                 // only array
@@ -255,7 +255,7 @@
 
             iterateCities () {
                 const temp = [];
-                const provinces = this.iterate(this.data['86'], 0);
+                const provinces = this.iterate(this.data['086'], 0);
 
                 for (let i = 0, l = provinces.length; i < l; i++) {
                     const item = {};

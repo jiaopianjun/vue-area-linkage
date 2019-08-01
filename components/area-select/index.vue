@@ -82,13 +82,13 @@
         },
 
         data () {
-            if (!this.data || !this.data['86']) {
+            if (!this.data || !this.data['086']) {
                 throw new Error('[vue-area-linkage]: 需要提供地区数据，格式参考见：https://github.com/dwqs/area-data');
             }
 
             return {
                 // 区域数据
-                provinces: this.data['86'],
+                provinces: this.data['086'],
                 citys: {},
                 areas: {},
 
